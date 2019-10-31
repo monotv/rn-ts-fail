@@ -25,11 +25,15 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Video from 'react-native-video';
+import { Icon } from 'react-native-vector-icons/Icon';
 
 const App = () => {
   const usingHermes = typeof HermesInternal === 'object' && HermesInternal !== null;
   return (
     <>
+      <Icon name={"test"} />
+      <Video source={1} />
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
