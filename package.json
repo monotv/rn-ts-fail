@@ -7,11 +7,13 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "clear": "watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn install",
+    "clearstart": "yarn clear && yarn start -- --reset-cache"
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.3",
+    "react-native": "0.60.6",
     "react-native-vector-icons": "6.6.0",
     "react-native-video": "5.0.2"
   },
@@ -20,7 +22,7 @@
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
     "@types/jest": "^24.0.18",
-    "@types/react-native": "^0.60.21",
+    "@types/react-native": "0.60.0",
     "@types/react-native-vector-icons": "^6.4.4",
     "@types/react-native-video": "3.1.5",
     "@types/react-test-renderer": "16.9.0",
