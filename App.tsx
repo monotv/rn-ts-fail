@@ -27,9 +27,13 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Video from 'react-native-video';
 import { Icon } from 'react-native-vector-icons/Icon';
+// import * as Sentry from "@sentry/react-native";
 
 const App = () => {
   const usingHermes = typeof HermesInternal === 'object' && HermesInternal !== null;
+  // Sentry.init({
+  //   dsn: "__DSN__"
+  // });
   return (
     <>
       <Icon name={"test"} />
