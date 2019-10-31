@@ -1,0 +1,2 @@
+Running `yarn tsc` on `master` with `"react-native": "0.61.3"` and `"@types/react-native": "^0.60.21"` does not fail.
+Running `yarn tsc` on `master` with `"react-native": "0.60.6"` and `"@types/react-native": "0.60.0"` fails.
